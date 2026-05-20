@@ -1,0 +1,6 @@
+{
+  "name": "LG전자 구독 서비스",
+  "description": "AI 맞춤 설문조사를 통해 나의 가구 인원, 평소 불편함, 예산에 꼭 맞는 LG전자 최첨단 가전을 3초 만에 설계하고 추천받는 라이프스타일 구독 서비스 랜딩페이지입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

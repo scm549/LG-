@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans KR', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-lg-red: #A50034;
+  --color-lg-red-dark: #810028;
+  --color-lg-red-light: #C21A4C;
+  --color-lg-bg: #F7F4F5;
+  --color-lg-dark: #111111;
+  --color-lg-gray: #F3F4F6;
+  --color-lg-accent: #E91E63;
+  --color-lg-muted: #555555;
+  --color-lg-pink-pink: #FFF0F2;
+}
+
+@layer base {
+  body {
+    background-color: #F7F4F5;
+    color: #111111;
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom fade-in and smooth entry effects */
+.smooth-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elegant shadow utilities */
+.lg-shadow-sm {
+  box-shadow: 0 4px 12px rgba(165, 0, 52, 0.03);
+}
+
+.lg-shadow-md {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(165, 0, 52, 0.02);
+}
+
+.lg-shadow-lg {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06), 0 8px 16px rgba(165, 0, 52, 0.03);
+}
+
+/* Scroll physics */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
